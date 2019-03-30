@@ -1,3 +1,13 @@
+#### 注意，设置静态IP一定要设enp3s0端口的！！！否则无法读取！
+
+auto enp3s0   
+iface enp3s0 inet static
+address 192.168.1.102
+netmask 255.255.255.0
+gateway 192.168.1.1
+
+dns-nameservers 192.168.1.1
+
 #### 1. Prerequisites
 (1) Install a ubuntu PC. We suggested Ubuntu 14.04 or Ubuntu 16.04. Please do not use virtual machine.
 (2) Install ros full-desktop version. We tried Indigo and Kinect.
